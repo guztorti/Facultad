@@ -6,21 +6,21 @@ package Personas;
 
 import enums.Departamentos;
 import enums.EstCivil;
-import interfaces.Profesor;
 import java.util.Date;
 import java.util.Scanner;
+import interfaces.Profesores;
 
 /**
  *
  * @author gustavotorti
  */
-public class Profesores extends Empleado implements Profesor {
+public class Profesor extends Empleado implements Profesores {
 
      private String departamento;
 
-     public Profesores(String departamento, Date anioIncorporacion, Integer nroDespacho, String nombre, String apellidos, Integer numIdentPers, EstCivil estadoCivil) {
+     public Profesor(String departamento, Date anioIncorporacion, Integer nroDespacho, String nombre, String apellidos, Integer numIdentPers, EstCivil estadoCivil) {
           super(anioIncorporacion, nroDespacho, nombre, apellidos, numIdentPers, estadoCivil);
-          this.departamento = departamento;
+          this.departamento = departamento();
      }
 
      

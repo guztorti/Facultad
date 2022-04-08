@@ -8,6 +8,6 @@ package interfaces;
  *
  * @author gustavotorti
  */
-public interface Profesor {
+public interface Profesores {
      public String departamento();
 }
